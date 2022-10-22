@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daftarperpus.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="344.0" fitWidth="458.0" opacity="0.47" pickOnBounds="true">
+         <image>
+            <Image url="@../MAINBG.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-3.0" prefHeight="30.0" prefWidth="458.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Input">
+            <items>
+              <MenuItem fx:id="inputanggota" mnemonicParsing="false" onAction="#inputanggotaklik" text="Registrasi" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Data">
+            <items>
+              <MenuItem fx:id="dataanggta" mnemonicParsing="false" onAction="#displayanggotaklik" text="Data" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fill="RED" layoutX="52.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELAMAT DATANG DI PERPUSTAKAAN">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="107.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STMIK DAMARMAS" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="153.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JL. DAMARMAS NO.77" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

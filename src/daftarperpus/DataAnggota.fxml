@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daftarperpus.DataAnggotaController">
+   <children>
+      <ImageView fitHeight="391.0" fitWidth="442.0" pickOnBounds="true">
+         <image>
+            <Image url="@../welcomebg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnquit" layoutX="335.0" layoutY="327.0" mnemonicParsing="false" onAction="#quitklik" prefHeight="25.0" prefWidth="75.0" text="Keluar" />
+      <Button fx:id="btnhapus" layoutX="210.0" layoutY="327.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="96.0" text="Hapus Data" />
+      <Button fx:id="btnupdate" layoutX="335.0" layoutY="289.0" mnemonicParsing="false" onAction="#updateklik" prefHeight="25.0" prefWidth="75.0" text="Edit Data" />
+      <Button fx:id="btntambah" layoutX="210.0" layoutY="289.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="25.0" prefWidth="96.0" text="Tambah Data" />
+      <Button fx:id="btnakhir" layoutX="11.0" layoutY="327.0" mnemonicParsing="false" onAction="#akhirklik" prefHeight="25.0" prefWidth="83.0" text="Ke-Akhir" />
+      <Button fx:id="btnsebelum" layoutX="109.0" layoutY="327.0" mnemonicParsing="false" onAction="#sebelumklik" prefHeight="25.0" prefWidth="83.0" text="Sebelumnya" />
+      <Button fx:id="btnsesudah" layoutX="109.0" layoutY="289.0" mnemonicParsing="false" onAction="#sesudahklik" prefHeight="25.0" prefWidth="83.0" text="Sesudah" />
+      <Button fx:id="btnawal" layoutX="11.0" layoutY="289.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="25.0" prefWidth="83.0" text="Ke-Awal" />
+      <TableView fx:id="tbvanggota" layoutX="19.0" layoutY="74.0" prefHeight="201.0" prefWidth="404.0">
+         <columns>
+            <TableColumn prefWidth="85.0" text="NPM" />
+            <TableColumn prefWidth="120.0" text="Nama" />
+            <TableColumn prefWidth="82.0" text="Alamat" />
+            <TableColumn prefWidth="116.0" text="Angkatan" />
+         </columns>
+      </TableView>
+      <Label layoutX="8.0" layoutY="28.0" text="Data Anggota Perpustakaan STMIK DAMARMAS" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
